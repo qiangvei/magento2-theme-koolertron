@@ -1,0 +1,26 @@
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+$homeNode = new \Magento\Framework\Data\Tree\Node([
+    'name' => __('Home'),
+    'id' => 'home',
+    'url' => $block->getBaseUrl(), //必须和实际的链接一致才会显示点击后的效果，否则无效果
+    'class'=> 'category-item',
+    'has_active' => false,
+    'is_active' => false // (expression to determine if menu item is selected or not)
+],'id',$block->getMenu()->getTree());
+$obj = $block->getMenu()->addChild($homeNode);
+
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menuHtml = $block->getHtml('level-top', 'submenu', $columnsLimit)
+?>
+
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?= /* @noEscape */ $_menuHtml?>
+        <?= $block->getChildHtml() ?>
+    </ul>
+</nav>
