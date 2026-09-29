@@ -1,5 +1,5 @@
 {
-    "name": "wei/koolertron",
+    "name": "qiangvei/koolertron",
     "description": "for koolertron.com",
     "require": {
         "php": "~8.4.0",
