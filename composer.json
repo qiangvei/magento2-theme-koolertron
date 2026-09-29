@@ -1,6 +1,6 @@
 {
     "name": "qiangvei/koolertron",
-    "description": "for koolertron.com",
+    "description": "theme for Magento 2.4",
     "require": {
         "php": "~8.4.0",
         "magento/framework": "*",
