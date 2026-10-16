@@ -1,21 +1,23 @@
 {
-    "name": "qiangvei/koolertron",
-    "description": "theme for Magento 2.4",
-    "require": {
-        "php": "~8.4.0",
-        "magento/framework": "*",
-        "magento/theme-frontend-blank": "*",
-        "magento/theme-frontend-luma": "*"
+  "name": "qiangvei/magento2-theme-koolertron",
+  "description": "koolertron style theme for Magento 2.4",
+  "type": "magento2-theme",
+  "require": {
+        "php": "~8.3 || ~8.4 || ~8.5",
+        "magento/theme-frontend-luma": "^100.4"
     },
-    "type": "magento2-theme",
-    "version": "1.0.0",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
+  "version": "1.0.1",
+  "license": [
+      "OSL-3.0",
+      "AFL-3.0"
     ],
-    "autoload": {
-        "files": [
-            "registration.php"
-        ]
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+        "Qiangvei\\magento2-theme-koolertron\\": ""
     }
+  }
 }
+
